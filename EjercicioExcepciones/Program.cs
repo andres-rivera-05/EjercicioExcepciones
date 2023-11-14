@@ -6,11 +6,13 @@ double num1, num2, suma, resta, divicion, multiplicacion;
 try
 {
 
-    Console.WriteLine("Ingrese un numero: ");
+    Console.Write("Ingrese un numero: ");
     num1 = PedirNumero();
 
-    Console.WriteLine("Ingrese un numero: ");
+    Console.Write("Ingrese un numero: ");
     num2 = PedirNumero();
+
+    Console.WriteLine();
 
 
     Operaciones operaciones = new Operaciones();
@@ -20,9 +22,10 @@ try
     multiplicacion = operaciones.Multipicacion(num1, num2);
     divicion = operaciones.Divicion(num1, num2);
 
-
-
-
+    Console.WriteLine($"Resultado de la suma: {suma}");
+    Console.WriteLine($"Resultado de la resta: {resta}");
+    Console.WriteLine($"Resultado de la multiplicacion: {multiplicacion}");
+    Console.WriteLine($"Resultado de la divicion: {divicion}");
 
 
 }
